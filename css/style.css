@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e4e4;
+}
+
+.container {
+  width: 200px;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: -8px -8px 15px rgba(225, 225, 225, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.9);
+  background-color: #2f3740;
+}
+
+#output {
+  width: 100%;
+  height: 60px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: right;
+  box-shadow: -8px -8px 15px rgba(225, 225, 225, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  place-items: center;
+  margin-top: 10px;
+}
+
+.key,
+.equal {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #eb2a46;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ededf0;
+  text-align: center;
+  box-shadow: -8px -8px 15px rgba(225, 225, 225, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.key2,
+.key3 {
+  background-color: #438cf3;
+}
+
+.key4,
+.key8,
+.key12,
+.key16 {
+  background-color: #377f79;
+}
+
+.key5,
+.key6,
+.key7,
+.key9,
+.key10,
+.key11,
+.key13,
+.key14,
+.key15,
+.key17,
+.key18 {
+  color: #6a7278;
+  background-color: #ededf0;
+}
+
+.key17 {
+  grid-column: span 2;
+}
+
+.equal {
+  background-color: #f3d424;
+}
